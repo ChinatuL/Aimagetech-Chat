@@ -8,7 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
             rel="stylesheet"
         />
         <script
@@ -26,12 +26,25 @@
                 <p>Let's Discuss with our community</p>
             </div>
             <div class="header-end">
-                <div class="notifications">
-                    <button><i class="fa-regular fa-message"></i></button>
+                <div class="notifications header-icon">
+                    <button class="header-icon">
+                        <i class="fa-regular fa-message"></i>
+                    </button>
                     <span class="badge">8</span>
                 </div>
-                <button><i class="fa-regular fa-bookmark"></i></button>
-                <button><i class="fa-regular fa-bell"></i></button>
+                <span class="dividers"></span>
+                <div class="header-icon">
+                    <button>
+                        <i class="fa-regular fa-bookmark"></i>
+                    </button>
+                </div>
+                <span class="dividers"></span>
+                <div class="header-icon">
+                    <button>
+                        <i class="fa-regular fa-bell"></i>
+                    </button>
+                </div>
+                <span class="dividers"></span>
                 <div class="profile">
                     <div>
                         <img
@@ -42,7 +55,7 @@
                     <div class="profile-info">
                         <div>
                             <p class="profile-name">Sultanhand</p>
-                            <span class="profile-badge">Basics</span>
+                            <span class="profile-badge">Basic</span>
                         </div>
                         <p class="profile-email">sultanhand@gmail.com</p>
                     </div>
@@ -83,39 +96,79 @@
                                     min="0"
                                     max="5"
                                     step="1"
-                                    value="2"
+                                    value="1"
                                 />
                             </div>
                         </div>
                         <button><img src="./images/info.svg" alt="" /></button>
                     </div>
-                    <div class="navigation">
-                        <h2 class="heading">Started Here</h2>
-                        <div>
+                    <div class="navigation-container">
+                        <div class="navigation">
+                            <h2 class="heading">Started Here</h2>
                             <div>
-                                <img src="./images/home.svg" alt="" />
-                                <p>home</p>
+                                <div>
+                                    <img src="./images/home.svg" alt="" />
+                                    <p>home</p>
+                                </div>
+                                <div class="active">
+                                    <svg
+                                        width="25px"
+                                        height="25px"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <g
+                                            id="SVGRepo_bgCarrier"
+                                            stroke-width="0"
+                                        />
+
+                                        <g
+                                            id="SVGRepo_tracerCarrier"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+
+                                        <g id="SVGRepo_iconCarrier">
+                                            <path
+                                                d="M16.2426 7.75738C18.5858 10.1005 18.5858 13.8995 16.2426 16.2427M7.75736 16.2426C5.41421 13.8995 5.41421 10.1005 7.75736 7.75735M4.92893 19.0711C1.02369 15.1658 1.02369 8.8342 4.92893 4.92896M19.0711 4.929C22.9763 8.83424 22.9763 15.1659 19.0711 19.0711M14 12C14 13.1046 13.1046 14 12 14C10.8954 14 10 13.1046 10 12C10 10.8955 10.8954 10 12 10C13.1046 10 14 10.8955 14 12Z"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </g>
+                                    </svg>
+                                    <p>channel room</p>
+                                </div>
+                                <div>
+                                    <img src="./images/bag.svg" alt="" />
+                                    <p>prompt store</p>
+                                </div>
                             </div>
+                        </div>
+                        <div class="featured">
+                            <h2 class="heading">AI tools featured</h2>
                             <div>
-                                <img src="./images/signal.svg" alt="" />
-                                <p>channel room</p>
-                            </div>
-                            <div>
-                                <img src="./images/bag.svg" alt="" />
-                                <p>prompt store</p>
-                            </div>
-                            <div>
-                                <img src="./images/home.svg" alt="" />
-                                <p>home</p>
-                            </div>
-                            <div>
-                                <img src="./images/signal.svg" alt="" />
-                                <p>channel room</p>
+                                <div>
+                                    <img src="./images/camera.svg" alt="" />
+                                    <p>AI image generation</p>
+                                </div>
+                                <div>
+                                    <img src="./images/canvas.svg" alt="" />
+                                    <p>AI canvas playground</p>
+                                </div>
+                                <div>
+                                    <img src="./images/wand.svg" alt="" />
+                                    <p>generative recolor</p>
+                                </div>
+                                <div>
+                                    <img src="./images/board.svg" alt="" />
+                                    <p>extensive image</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="featured">
-                        <h2 class="heading">AI tools featured</h2>
+                    <div class="call-to-action">
                         <div>
                             <img
                                 src="./images/illustration.png"
@@ -517,11 +570,70 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="chat-input">
+                            <div class="message-box">
+                                <div class="message-box-header">
+                                    <button>
+                                        <i class="fa-solid fa-bold"></i>
+                                    </button>
+                                    <button>
+                                        <i class="fa-solid fa-italic"></i>
+                                    </button>
+                                    <button>
+                                        <i class="fa-solid fa-underline"></i>
+                                    </button>
+                                    <button class="add-link">
+                                        <i class="fa-solid fa-link"></i>
+                                    </button>
+                                    <button>
+                                        <i class="fa-solid fa-list"></i>
+                                    </button>
+                                    <button>
+                                        <i class="fa-solid fa-align-left"></i>
+                                    </button>
+                                </div>
                                 <textarea
                                     name=""
-                                    placeholder="Type your message here"
+                                    placeholder="Messages #Discuss"
                                 ></textarea>
+                                <div class="message-box-footer">
+                                    <div>
+                                        <button>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </button>
+                                        <button>
+                                            <i
+                                                class="fa-regular fa-face-frown"
+                                            ></i>
+                                        </button>
+                                    </div>
+                                    <div class="insert-audio">
+                                        <button>
+                                            <i class="fa-solid fa-video"></i>
+                                        </button>
+                                        <button>
+                                            <i
+                                                class="fa-solid fa-microphone"
+                                            ></i>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button>
+                                            <i class="fa-regular fa-square"></i>
+                                        </button>
+                                    </div>
+                                    <div class="send-button">
+                                        <button>
+                                            <i
+                                                class="fa-solid fa-paper-plane"
+                                            ></i>
+                                        </button>
+                                        <button>
+                                            <i
+                                                class="fa-solid fa-angle-down"
+                                            ></i>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </section>
                         <section class="threads">
@@ -573,7 +685,7 @@
                                                 ><span>2</span>
                                             </div>
                                         </div>
-                                    </div>                                    
+                                    </div>
                                 </div>
                                 <div class="chat">
                                     <div class="chat-header">
@@ -613,7 +725,7 @@
                                                 ><span>2</span>
                                             </div>
                                         </div>
-                                    </div>                                    
+                                    </div>
                                 </div>
                                 <div class="chat">
                                     <div class="chat-header">
@@ -653,7 +765,7 @@
                                                 ><span>2</span>
                                             </div>
                                         </div>
-                                    </div>                                    
+                                    </div>
                                 </div>
                                 <div class="chat">
                                     <div class="chat-header">
@@ -693,7 +805,7 @@
                                                 ><span>2</span>
                                             </div>
                                         </div>
-                                    </div>                                    
+                                    </div>
                                 </div>
                                 <div class="chat">
                                     <div class="chat-header">
@@ -733,14 +845,73 @@
                                                 ><span>2</span>
                                             </div>
                                         </div>
-                                    </div>                                    
+                                    </div>
                                 </div>
                             </div>
-                            <div class="chat-input">
+                            <div class="message-box">
+                                <div class="message-box-header">
+                                    <button>
+                                        <i class="fa-solid fa-bold"></i>
+                                    </button>
+                                    <button>
+                                        <i class="fa-solid fa-italic"></i>
+                                    </button>
+                                    <button>
+                                        <i class="fa-solid fa-underline"></i>
+                                    </button>
+                                    <button class="add-link">
+                                        <i class="fa-solid fa-link"></i>
+                                    </button>
+                                    <button>
+                                        <i class="fa-solid fa-list"></i>
+                                    </button>
+                                    <button>
+                                        <i class="fa-solid fa-align-left"></i>
+                                    </button>
+                                </div>
                                 <textarea
                                     name=""
-                                    placeholder="Type your message here"
+                                    placeholder="Messages #Discuss"
                                 ></textarea>
+                                <div class="message-box-footer">
+                                    <div>
+                                        <button>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </button>
+                                        <button>
+                                            <i
+                                                class="fa-regular fa-face-frown"
+                                            ></i>
+                                        </button>
+                                    </div>
+                                    <div class="insert-audio">
+                                        <button>
+                                            <i class="fa-solid fa-video"></i>
+                                        </button>
+                                        <button>
+                                            <i
+                                                class="fa-solid fa-microphone"
+                                            ></i>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button>
+                                            <i class="fa-regular fa-square"></i>
+                                        </button>
+                                    </div>
+                                    <div class="send-button">
+                                        <button>
+                                            <i
+                                                class="fa-solid fa-paper-plane"
+                                            ></i>
+                                        </button>
+                                        <button>
+                                            <i
+                                                class="fa-solid fa-angle-down"
+                                            ></i>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </section>
                     </div>
